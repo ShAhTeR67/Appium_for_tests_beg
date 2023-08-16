@@ -1,0 +1,4 @@
+selenium~=4.6.1
+pytest~=7.2.2
+Appium-Python-Client~=2.7.1
+requests~=2.31.0
