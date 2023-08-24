@@ -131,3 +131,5 @@ dmypy.json
 # App APK file
 /apps/
 /tests/my_image.png
+/configuration.py
+/connection_config.ini

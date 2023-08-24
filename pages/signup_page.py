@@ -75,3 +75,11 @@ class SignUpPage(BasePage):
         # Нажать далее
         self.click_proceed_btn()
         sleep(LONG_SLEEP_WAIT)
+
+    def get_toast(self, cor_toast_msg):
+        toast_pointer = base_page_locator.TOAST
+        toast_msg = cor_toast_msg
+        toast = self.get_toast_message(toast_pointer)
+        assert toast == toast_msg, \
+            f'Тосты не совпадают. Ожидалось - "{toast_msg}", а получили "{toast}"'
+        return toast
